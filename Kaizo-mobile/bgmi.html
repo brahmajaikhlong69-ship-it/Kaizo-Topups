@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BGMI UC Top-Up | KAIZO TOPUPS</title>
+  <meta name="description" content="Top up BGMI UC through KAIZO TOPUPS. Select your package and contact us to place your order.">
+  <link rel="stylesheet" href="bgmi.css">
+  <script src="bgmi.js" defer></script>
+</head>
+<body>
+
+  <header class="game-header">
+    <a href="index.html" class="brand">
+      <span>KAIZO</span>
+      <span class="brand-subtitle">TOPUPS</span>
+    </a>
+
+    <a href="index.html" class="back-link">← Home</a>
+  </header>
+
+  <main class="game-container">
+    <!-- BGMI PROMOTIONAL BANNER -->
+<section class="game-banner">
+
+  <div class="bgmi-banner">
+    <img
+      src="images/bgmi-banner.png"
+      alt="KAIZO TOPUPS BGMI UC promotional banner"
+      class="bgmi-banner-image"
+    >
+  </div>
+
+</section>
+
+    <section class="game-intro">
+      <p class="eyebrow">PREMIUM GAME TOP-UPS</p>
+      <h1>BGMI UC Top-Up</h1>
+      <p class="intro-text">
+        Choose your UC package and place your order through WhatsApp.
+      </p>
+    </section>
+
+    <section class="panel" id="player-details">
+      <h2>1. Enter Your Player Details</h2>
+
+      <label for="player-id">BGMI Character ID</label>
+      <input
+        type="text"
+        id="player-id"
+        placeholder="Enter your Character ID"
+        inputmode="numeric"
+        autocomplete="off"
+      >
+
+      <p class="helper-text">
+        Double-check your Character ID before ordering.
+      </p>
+    </section>
+
+    <!-- UC PACKAGES -->
+<section class="panel" id="uc-packages">
+
+  <div class="section-title">
+    <div>
+      <p class="eyebrow">CHOOSE YOUR UC</p>
+      <h2>2. Select Your UC Package</h2>
+    </div>
+  </div>
+
+  <p class="helper-text">
+    Select your preferred package. You can choose multiple packages.
+  </p>
+
+  <!-- SMALL UC PACKAGES -->
+  <div class="package-category">
+    <h3>💵 Small UC Packages</h3>
+  </div>
+
+  <div class="package-grid" id="package-grid">
+
+    <button class="package-card" type="button"
+      data-name="60 UC" data-price="75">
+      <span class="package-amount">💵 60 UC</span>
+      <span class="package-price">₹75</span>
+    </button>
+
+    <button class="package-card" type="button"
+      data-name="80 UC" data-price="100">
+      <span class="package-amount">💵 80 UC</span>
+      <span class="package-price">₹100</span>
+    </button>
+
+    <button class="package-card" type="button"
+      data-name="325 UC" data-price="380">
+      <span class="package-amount">💵 325 UC</span>
+      <span class="package-price">₹380</span>
+    </button>
+
+    <button class="package-card" type="button"
+      data-name="660 UC" data-price="750">
+      <span class="package-amount">💵 660 UC</span>
+      <span class="package-price">₹750</span>
+    </button>
+
+  </div>
+
+  <!-- BONUS UC PACKAGES -->
+  <div class="package-category">
+    <h3>🔥 Bonus UC Packages</h3>
+  </div>
+
+  <div class="package-grid">
+
+    <button class="package-card" type="button"
+      data-name="800 UC + 100 Bonus (900 UC Total)" data-price="1000">
+      <span class="package-amount">💵 900 UC</span>
+      <small>800 UC + 100 Bonus</small>
+      <span class="package-price">₹1,000</span>
+    </button>
+
+    <button class="package-card" type="button"
+      data-name="8000 UC + 2800 Bonus (10800 UC Total)" data-price="10000">
+      <span class="package-amount">💵 10,800 UC</span>
+      <small>8,000 UC + 2,800 Bonus</small>
+      <span class="package-price">₹10,000</span>
+    </button>
+
+  </div>
+
+  <!-- LARGE UC PACKAGES -->
+  <div class="package-category">
+    <h3>👑 Large UC Packages</h3>
+  </div>
+
+  <div class="package-grid">
+
+    <button class="package-card" type="button"
+      data-name="1800 UC" data-price="1900">
+      <span class="package-amount">💵 1,800 UC</span>
+      <span class="package-price">₹1,900</span>
+    </button>
+
+    <button class="package-card" type="button"
+      data-name="3850 UC" data-price="3800">
+      <span class="package-amount">💵 3,850 UC</span>
+      <span class="package-price">₹3,800</span>
+    </button>
+
+    <button class="package-card" type="button"
+      data-name="8100 UC" data-price="7500">
+      <span class="package-amount">💵 8,100 UC</span>
+      <span class="package-price">₹7,500</span>
+    </button>
+
+  </div>
+
+</section>
+
+    <section class="panel order-panel">
+      <h2>3. Your Order</h2>
+
+      <div class="order-summary">
+        <span>Selected Package</span>
+        <strong id="selected-package">None selected</strong>
+      </div>
+
+      <div class="order-summary">
+        <span>Price</span>
+        <strong id="selected-price">₹0</strong>
+      </div>
+
+      <button type="button" id="order-button">
+        Order Through WhatsApp
+      </button>
+
+      <p class="helper-text">
+        Confirm the final price with us before making payment.
+      </p>
+    </section>
+
+    <p class="disclaimer">
+      KAIZO TOPUPS is an independent top-up store and is not
+      affiliated with or endorsed by KRAFTON.
+    </p>
+
+  </main>
+
+  <footer class="game-footer">
+    <p>©️ <span id="current-year"></span> KAIZO TOPUPS</p>
+    <a href="index.html">Back to Home</a>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,389 @@
+/* ===== KAIZO TOPUPS - BGMI PAGE ===== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --gold: #f5c542;
+  --gold-dark: #29220f;
+  --background: #090909;
+  --panel: #141414;
+  --border: #303030;
+  --text: #ffffff;
+  --muted: #a5a5a5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* Header */
+
+.game-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 5%;
+  border-bottom: 1px solid var(--border);
+  background: #0d0d0d;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 1.1;
+}
+
+.brand-subtitle {
+  font-size: 0.65rem;
+  letter-spacing: 5px;
+  margin-top: 5px;
+}
+
+.back-link {
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.back-link:hover,
+.game-footer a:hover {
+  opacity: 0.75;
+}
+
+/* Main content */
+
+.game-container {
+  width: min(100% - 32px, 680px);
+  margin: 0 auto;
+  padding: 28px 0 40px;
+}
+
+.game-intro {
+  text-align: center;
+  padding: 24px 8px 30px;
+}
+
+.eyebrow {
+  color: var(--gold);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.game-intro h1 {
+  font-size: clamp(2rem, 8vw, 3rem);
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+
+.intro-text {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Panels */
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 18px;
+}
+
+.panel h2 {
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+}
+
+/* Player ID */
+
+label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #3c3c3c;
+  border-radius: 10px;
+  outline: none;
+  background: #0b0b0b;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px #f5c54220;
+}
+
+input::placeholder {
+  color: #777;
+}
+
+.helper-text {
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+/* Package grid - ready for UC cards */
+
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.package-card {
+  min-height: 115px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  background: #1b1b1b;
+  border: 1px solid #383838;
+  border-radius: 14px;
+
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.package-amount {
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.package-price {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #f5c542;
+}
+
+.package-card:hover {
+  border-color: #f5c542;
+  background: #29220f;
+  transform: translateY(-2px);
+}
+
+.package-card.selected {
+  border: 2px solid #f5c542;
+  background: #29220f;
+  box-shadow: 0 0 12px #f5c54225;
+}
+
+.package-card:focus-visible {
+  outline: 2px solid #f5c542;
+  outline-offset: 3px;
+} 
+
+
+/* Order summary */
+
+.order-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.order-summary span {
+  color: var(--muted);
+}
+
+.order-summary strong {
+  color: var(--gold);
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+#order-button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+  background: var(--gold);
+  color: #111;
+  font-size: 0.95rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+#order-button:hover {
+  background: #ffda69;
+  transform: translateY(-2px);
+}
+
+#order-button:active {
+  transform: scale(0.98);
+}
+
+/* Disclaimer and footer */
+
+.disclaimer {
+  color: #858585;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  text-align: center;
+  padding: 10px 8px 24px;
+}
+
+.game-footer {
+  border-top: 1px solid var(--border);
+  padding: 22px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.game-footer a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+/* Small screens */
+
+@media (max-width: 380px) {
+  .panel {
+    padding: 15px;
+  }
+
+  .game-header {
+    padding: 16px;
+  }
+
+  .game-footer {
+    padding: 20px 16px;
+  }
+}
+/* UC PACKAGE CATEGORY HEADINGS */
+.package-category h3 {
+  font-size: 23px;
+  font-weight: 800;
+  color: #f5cc55;
+  margin: 28px 0 18px;
+  letter-spacing: 0.4px;
+  line-height: 1.4;
+  text-shadow: 0 0 12px rgba(245, 204, 85, 0.15);
+}
+
+/* UC PACKAGE WRAPPER */
+.package-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* HIDE QUANTITY CONTROLS UNTIL SELECTION */
+.quantity-control {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 12px;
+  padding: 8px;
+}
+
+/* PLUS AND MINUS BUTTONS */
+.quantity-control button {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  background: #151515;
+  color: #f5cc55;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* QUANTITY NUMBER */
+.quantity-value {
+  min-width: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* SELECTED PACKAGE */
+.package-item.selected .quantity-control {
+  display: flex;
+}
+
+/* SELECTED PACKAGE BORDER */
+.package-card.selected {
+  border-color: #d4af37;
+}
+
+/* MOBILE HEADINGS */
+@media (max-width: 600px) {
+  .package-category h3 {
+    font-size: 20px;
+    margin: 24px 0 16px;
+  }
+}
+/* BGMI promotional banner — MATCH MLBB */
+
+.game-banner {
+  width: 100%;
+  margin: 0 auto 24px;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid rgba(245, 197, 66, 0.35);
+  background: #090909;
+  line-height: 0;
+}
+
+.bgmi-banner {
+  position: relative;
+  width: 100%;
+}
+
+.bgmi-banner-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .game-banner {
+    margin-bottom: 24px;
+  }
+}

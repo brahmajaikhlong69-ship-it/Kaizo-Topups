@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+
+  <title>MLBB Diamonds | KAIZO TOPUPS</title>
+
+  <link rel="stylesheet" href="mlbb.css">
+  <script src="mlbb.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="topbar">
+
+    <a class="brand" href="index.html">
+      <span>KAIZO</span>
+      <small>TOPUPS</small>
+    </a>
+
+    <a class="back-link" href="index.html">
+      ← Home
+    </a>
+
+  </header>
+
+
+  <main class="page">
+
+    <!-- MLBB PROMOTIONAL BANNER SLIDESHOW -->
+    <section class="game-banner">
+
+      <div class="mlbb-slides">
+
+        <img
+          src="images/obsidia-banner.png"
+          alt="KAIZO TOPUPS Mobile Legends Promotion"
+          class="mlbb-slide active"
+        >
+
+        <img
+          src="images/mlbb-banner-2.png"
+          alt="Mobile Legends Diamonds Promotion"
+          class="mlbb-slide"
+        >
+
+      </div>
+
+    </section>
+
+
+    <!-- GAME HEADING -->
+    <section class="game-heading">
+
+      <div class="game-logo">ML</div>
+
+      <div>
+        <p class="eyebrow">MOBILE LEGENDS: BANG BANG</p>
+
+        <h1>Diamonds Top-Up</h1>
+
+        <p class="muted">
+          Choose your package and prepare your order.
+        </p>
+      </div>
+
+    </section>
+
+
+    <!-- PLAYER DETAILS -->
+    <section class="panel" id="player-details">
+
+      <h2>1. Enter Player Details</h2>
+
+      <p class="muted small">
+        Enter your details carefully before placing an order.
+      </p>
+
+      <div class="field-grid">
+
+        <label>
+          Player ID
+
+          <input
+            id="player-id"
+            type="text"
+            inputmode="numeric"
+            placeholder="Enter Player ID"
+            autocomplete="off"
+            required
+          >
+        </label>
+
+        <label>
+          Server ID
+
+          <input
+            id="server-id"
+            type="text"
+            inputmode="numeric"
+            placeholder="Enter Server ID"
+            autocomplete="off"
+            required
+          >
+        </label>
+
+      </div>
+
+      <p class="hint">
+        Find your Player ID and Server ID in your Mobile Legends profile.
+      </p>
+
+    </section>
+
+
+    <!-- PACKAGE NAVIGATION -->
+    <nav class="category-nav" aria-label="Top-up categories">
+
+      <a href="#diamonds" class="category-tab active">
+        💎 Diamonds
+      </a>
+
+      <a href="#double-diamonds" class="category-tab">
+        ⚡ Double Diamonds
+      </a>
+
+      <a href="#weekly-pass" class="category-tab">
+        🎟️ Weekly Pass
+      </a>
+
+      <a href="#twilight-pass" class="category-tab">
+        🌙 Twilight Pass
+      </a>
+
+    </nav>
+
+
+    <!-- DIAMOND PACKAGES -->
+    <section class="panel" id="diamonds">
+
+      <div class="section-title">
+
+        <div>
+          <p class="eyebrow">FIND YOUR PACKAGE</p>
+          <h2>2. Select Diamonds</h2>
+        </div>
+
+        <span class="sample-label">
+          KAIZO TOPUPS
+        </span>
+
+      </div>
+
+
+      <!-- SMALL DIAMOND PACKS -->
+      <div class="package-category">
+        <h3>💎 Small Diamond Packs</h3>
+      </div>
+
+      <div class="package-grid" id="package-grid">
+
+        <button class="package-card" type="button"
+          data-name="5 Diamonds" data-price="11">
+          <span class="diamond-icon">💎</span>
+          <strong>5 Diamonds</strong>
+          <span class="price">₹11</span>
+        </button>
+
+        <button class="package-card" type="button"
+          data-name="13 + 1 Diamonds" data-price="25">
+          <span class="diamond-icon">💎</span>
+          <strong>13 + 1 Diamonds</strong>
+          <small>Bonus included</small>
+          <span class="price">₹25</span>
+        </button>
+
+        <button class="package-card" type="button"
+          data-name="38 + 4 Diamonds" data-price="76">
+          <span class="diamond-icon">💎</span>
+          <strong>38 + 4 Diamonds</strong>
+          <small>Bonus included</small>
+          <span class="price">₹76</span>
+        </button>
+
+        <button class="package-card" type="button"
+          data-name="64 + 6 Diamonds" data-price="125">
+          <span class="diamond-icon">💎</span>
+          <strong>64 + 6 Diamonds</strong>
+          <small>Bonus included</small>
+          <span class="price">₹125</span>
+        </button>
+
+        <button class="package-card" type="button"
+          data-name="78 + 8 Diamonds" data-price="129">
+          <span class="diamond-icon">💎</span>
+          <strong>78 + 8 Diamonds</strong>
+          <small>Bonus included</small>
+          <span class="price">₹129</span>
+        </button>
+
+      </div>
+
+
+      <!-- POPULAR DIAMOND PACKS -->
+      <div class="package-category">
+        <h3>🔥 Popular Diamond Packs</h3>
+      </div>
+
+      <div class="package-grid">
+
+        <button class="package-card" type="button"
+          data-name="127 + 13 Diamonds" data-price="245">
+          <span class="diamond-icon">💎</span>
+          <strong>127 + 13 Diamonds</strong>
+          <span class="price">₹245</span>
+        </button>
+
+        <button class="package-card" type="button"
+          data-name="156 + 16 Diamonds" data-price="255">
+          <span class="diamond-icon">💎</span>
+          <strong>156 + 16 Diamonds</strong>
+          <span class="price">₹255</span>
+        </button>
+
+        <button class="package-card" type="button"
+          data-name="234 + 23 Diamonds" data-price="375">
+          <span class="diamond-icon">💎</span>
+          <strong>234 + 23 Diamonds</strong>
+          <span class="price">₹375</span>
+        </button>
+
+        <button class="package-card" type="button"
+          data-name="254 + 30 Diamonds" data-price="480">
+          <span class="diamond-icon">💎</span>
+          <strong>254 + 30 Diamonds</strong>
+          <span class="price">₹480</span>
+        </button>
+
+        <button class="package-card" type="button"
+          data-name="317 + 38 Diamonds" data-price="600">
+          <span class="diamond-icon">💎</span>
+          <strong>317 + 38 Diamonds</strong>
+          <span class="price">₹600</span>
+        </button>
+
+        <button class="package-card" type="button"
+          data-name="383 + 46 Diamonds" data-price="720">
+          <span class="diamond-icon">💎</span>
+          <strong>383 + 46 Diamonds</strong>
+          <span class="price">₹720</span>
+        </button>
+
+        <button class="package-card" type="button"
+          data-name="468 + 46 Diamonds" data-price="760">
+          <span class="diamond-icon">💎</span>
+          <strong>468 + 46 Diamonds</strong>
+          <span class="price">₹760</span>
+        </button>
+
+        <button class="package-card" type="button"
+          data-name="625 + 81 Diamonds" data-price="980">
+          <span class="diamond-icon">💎</span>
+          <strong>625 + 81 Diamonds</strong>
+          <span class="price">₹980</span>
+        </button>
+
+        <button class="package-card" type="button"
+          data-name="633 + 83 Diamonds" data-price="1195">
+          <span class="diamond-icon">💎</span>
+          <strong>633 + 83 Diamonds</strong>
+          <span class="price">₹1,195</span>
+        </button>
+
+        <button class="package-card" type="button"
+          data-name="940 + 144 Diamonds" data-price="1790">
+          <span class="diamond-icon">💎</span>
+          <strong>940 + 144 Diamonds</strong>
+          <span class="price">₹1,790</span>
+        </button>
+
+      </div>
+
+
+      <!-- MEGA DIAMOND PACKS -->
+      <div class="package-category">
+        <h3>👑 Mega Diamond Packs</h3>
+      </div>
+
+      <div class="package-grid">
+
+        <button class="package-card" type="button"
+          data-name="1252 + 194 Diamonds" data-price="2370">
+          <span class="diamond-icon">💎</span>
+          <strong>1,252 + 194 Diamonds</strong>
+          <span class="price">₹2,370</span>
+        </button>
+
+        <button class="package-card" type="button"
+          data-name="1860 + 335 Diamonds" data-price="2940">
+          <span class="diamond-icon">💎</span>
+          <strong>1,860 + 335 Diamonds</strong>
+          <span class="price">₹2,940</span>
+        </button>
+
+        <button class="package-card" type="button"
+          data-name="2501 + 475 Diamonds" data-price="4740">
+          <span class="diamond-icon">💎</span>
+          <strong>2,501 + 475 Diamonds</strong>
+          <span class="price">₹4,740</span>
+        </button>
+
+        <button class="package-card" type="button"
+          data-name="3099 + 589 Diamonds" data-price="4885">
+          <span class="diamond-icon">💎</span>
+          <strong>3,099 + 589 Diamonds</strong>
+          <span class="price">₹4,885</span>
+        </button>
+
+        <button class="package-card" type="button"
+          data-name="4649 + 883 Diamonds" data-price="7370">
+          <span class="diamond-icon">💎</span>
+          <strong>4,649 + 883 Diamonds</strong>
+          <span class="price">₹7,370</span>
+        </button>
+
+        <button class="package-card" type="button"
+          data-name="7740 + 1548 Diamonds" data-price="12900">
+          <span class="diamond-icon">💎</span>
+          <strong>7,740 + 1,548 Diamonds</strong>
+          <span class="price">₹12,900</span>
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- DOUBLE DIAMOND PACKS -->
+    <section class="panel" id="double-diamonds">
+
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">SPECIAL DIAMOND DEALS</p>
+          <h2>⚡ Double Diamond Packs</h2>
+        </div>
+      </div>
+
+      <div class="package-grid">
+
+        <button class="package-card" type="button"
+          data-name="50 + 50 Double Diamonds" data-price="82">
+          <span class="diamond-icon">💎</span>
+          <strong>50 + 50 Diamonds</strong>
+          <small>Double Diamonds</small>
+          <span class="price">₹82</span>
+        </button>
+
+        <button class="package-card" type="button"
+          data-name="150 + 150 Double Diamonds" data-price="249">
+          <span class="diamond-icon">💎</span>
+          <strong>150 + 150 Diamonds</strong>
+          <small>Double Diamonds</small>
+          <span class="price">₹249</span>
+        </button>
+
+        <button class="package-card" type="button"
+          data-name="250 + 250 Double Diamonds" data-price="395">
+          <span class="diamond-icon">💎</span>
+          <strong>250 + 250 Diamonds</strong>
+          <small>Double Diamonds</small>
+          <span class="price">₹395</span>
+        </button>
+
+        <button class="package-card" type="button"
+          data-name="500 + 500 Double Diamonds" data-price="815">
+          <span class="diamond-icon">💎</span>
+          <strong>500 + 500 Diamonds</strong>
+          <small>Double Diamonds</small>
+          <span class="price">₹815</span>
+        </button>
+
+      </div>
+
+      <p class="hint">
+        Double Diamond offers may depend on game rules,
+        account eligibility, and current availability.
+      </p>
+
+    </section>
+
+<!-- WEEKLY PASS -->
+<section class="panel" id="weekly-pass">
+
+  <div class="section-title">
+    <div>
+      <p class="eyebrow">WEEKLY REWARDS</p>
+      <h2>🎟️ Weekly Pass</h2>
+    </div>
+  </div>
+
+  <div class="weekly-card">
+
+    <div class="weekly-art">
+      <img
+        src="images/weekly-pass.jpg"
+        alt="MLBB Weekly Pass"
+        class="pass-image"
+      >
+    </div>
+
+    <div class="weekly-info">
+
+      <h3>MLBB Weekly Pass</h3>
+
+      <p>
+        Get your Weekly Pass through our manual
+        top-up ordering service.
+      </p>
+
+      <p class="weekly-price">₹155</p>
+
+      <button
+        class="weekly-select"
+        type="button"
+        data-name="Weekly Pass"
+        data-price="155">
+        Select Weekly Pass
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+    
+<!-- TWILIGHT PASS -->
+
+<section class="panel" id="twilight-pass">
+
+  <div class="section-title">
+    <div>
+      <p class="eyebrow">SPECIAL PASS</p>
+      <h2>🌙 Twilight Pass</h2>
+    </div>
+  </div>
+
+  <div class="weekly-card">
+
+    <div class="weekly-art">
+      <img
+        src="images/Twilight-pass.webp"
+        alt="MLBB Twilight Pass"
+        class="pass-image"
+      >
+    </div>
+
+    <div class="weekly-info">
+
+      <h3>MLBB Twilight Pass</h3>
+
+      <p>
+        Select the Twilight Pass to prepare your order.
+      </p>
+
+      <p class="weekly-price">₹850</p>
+
+      <button
+        class="weekly-select"
+        type="button"
+        data-name="Twilight Pass"
+        data-price="850">
+        Select Twilight Pass
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+    
+
+    <!-- ORDER SUMMARY -->
+    <section class="panel" id="your-order">
+
+      <h2>3. Your Order</h2>
+
+      <div class="order-summary">
+
+        <span class="muted">Selected package</span>
+
+        <strong id="selected-package">
+          No package selected
+        </strong>
+
+        <span class="muted">Total price</span>
+
+        <strong id="selected-price">
+          ₹0
+        </strong>
+
+      </div>
+
+      <button
+        class="order-button"
+        id="order-button"
+        type="button">
+        Continue to WhatsApp →
+      </button>
+
+      <p class="hint">
+        No payment is collected on this page. After receiving
+        your order, the store owner will send payment instructions
+        manually.
+      </p>
+
+    </section>
+
+
+    <!-- DISCLAIMER -->
+    <p class="disclaimer">
+      KAIZO TOPUPS is an independent top-up storefront and is not
+      affiliated with or endorsed by Moonton.
+    </p>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <a href="index.html">KAIZO TOPUPS</a>
+
+    <p>Built for gamers. Powered by passion.</p>
+
+  </footer>
+
+</body>
+
+</html>

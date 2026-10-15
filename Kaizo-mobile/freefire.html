@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Free Fire Diamonds | KAIZO TOPUPS</title>
+  <meta name="description" content="Choose a Free Fire diamond package and contact KAIZO TOPUPS to place your order.">
+
+  <link rel="stylesheet" href="freefire.css">
+  <script src="freefire.js" defer></script>
+</head>
+
+<body>
+
+  <header class="game-header">
+    <a href="index.html" class="brand">
+      <span>KAIZO</span>
+      <span class="brand-subtitle">TOPUPS</span>
+    </a>
+
+    <a href="index.html" class="back-link">← Home</a>
+  </header>
+
+  <main class="game-container">
+
+    <section class="game-intro">
+      <p class="eyebrow">PREMIUM GAME TOP-UPS</p>
+      <h1>Free Fire Diamonds</h1>
+      <p class="intro-text">
+        Choose your diamond package and place your order through WhatsApp.
+      </p>
+    </section>
+
+    <section class="panel" id="player-details">
+      <h2>1. Enter Your Player Details</h2>
+
+      <label for="player-id">Free Fire Player ID</label>
+      <input
+        type="text"
+        id="player-id"
+        placeholder="Enter your Player ID"
+        inputmode="numeric"
+        autocomplete="off"
+      >
+
+      <p class="helper-text">
+        Please double-check your Player ID before ordering.
+      </p>
+    </section>
+
+    <section class="panel" id="diamond-packages">
+
+  <h2>2. Select Your Packages</h2>
+
+  <p class="helper-text">
+    Choose your Diamond Packs or Memberships. You can select multiple packages.
+  </p>
+
+  <!-- DIAMOND PACKAGES -->
+  <div class="package-category">
+    <h3>💎 Diamond Packages</h3>
+
+    <div class="package-grid" id="package-grid">
+
+      <button class="package-card" type="button"
+        data-name="100 Diamonds" data-price="80">
+        <span class="package-amount">100 Diamonds</span>
+        <span class="package-price">₹80</span>
+      </button>
+
+      <button class="package-card" type="button"
+        data-name="310 Diamonds" data-price="240">
+        <span class="package-amount">310 Diamonds</span>
+        <span class="package-price">₹240</span>
+      </button>
+
+      <button class="package-card" type="button"
+        data-name="520 Diamonds" data-price="400">
+        <span class="package-amount">520 Diamonds</span>
+        <span class="package-price">₹400</span>
+      </button>
+
+      <button class="package-card" type="button"
+        data-name="1,060 Diamonds" data-price="800">
+        <span class="package-amount">1,060 Diamonds</span>
+        <span class="package-price">₹800</span>
+      </button>
+
+      <button class="package-card" type="button"
+        data-name="2,180 Diamonds" data-price="1600">
+        <span class="package-amount">2,180 Diamonds</span>
+        <span class="package-price">₹1,600</span>
+      </button>
+
+      <button class="package-card" type="button"
+        data-name="5,600 Diamonds" data-price="4000">
+        <span class="package-amount">5,600 Diamonds</span>
+        <span class="package-price">₹4,000</span>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- MEMBERSHIPS -->
+  <div class="package-category">
+
+    <h3>👑 Memberships & Passes</h3>
+
+    <div class="package-grid">
+
+      <button class="package-card" type="button"
+        data-name="Weekly Membership (450 Total Diamonds)" data-price="159">
+        <span class="package-amount">Weekly Membership</span>
+        <span class="package-price">₹159</span>
+        <span class="package-bonus">
+          450 Total Diamonds
+        </span>
+      </button>
+
+      <button class="package-card" type="button"
+        data-name="Monthly Membership" data-price="799">
+        <span class="package-amount">Monthly Membership</span>
+        <span class="package-price">₹799</span>
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+</div>
+
+    <section class="panel order-panel">
+      <h2>3. Your Order</h2>
+
+      <div class="order-summary">
+        <span>Selected Package</span>
+        <strong id="selected-package">None selected</strong>
+      </div>
+
+      <div class="order-summary">
+        <span>Price</span>
+        <strong id="selected-price">₹0</strong>
+      </div>
+
+      <button type="button" id="order-button">
+        Order Through WhatsApp
+      </button>
+
+      <p class="helper-text">
+        Confirm the final price with us before making payment.
+      </p>
+    </section>
+
+    <p class="disclaimer">
+      KAIZO TOPUPS is an independent top-up store and is not
+      affiliated with or endorsed by Garena.
+    </p>
+
+  </main>
+
+  <footer class="game-footer">
+    <p>©️ <span id="current-year"></span> KAIZO TOPUPS</p>
+    <a href="index.html">Back to Home</a>
+  </footer>
+
+</body>
+</html>

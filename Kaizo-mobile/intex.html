@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <title>KAIZO TOPUPS | Gaming Top-Ups</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Kaizo Topups Home">
+      <span class="brand-name">KAIZO</span>
+      <span class="brand-subtitle">TOPUPS</span>
+    </a>
+    <button class="menu-button" id="menu-button"
+  aria-label="Open navigation menu"
+  aria-expanded="false"
+  aria-controls="mobile-menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+<nav class="mobile-menu" id="mobile-menu" aria-label="Main navigation" hidden>
+  <a href="index.html">Home</a>
+  <a href="mlbb.html">Mobile Legends</a>
+  <a href="bgmi.html">BGMI</a>
+  <a href="freefire.html">Free Fire</a>
+  <a href="#about">About Us</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<nav class="mobile-menu" id="mobile-menu" aria-label="Main navigation" hidden>
+  <a href="index.html">Home</a>
+  <a href="mlbb.html">Mobile Legends</a>
+  <a href="bgmi.html">BGMI</a>
+  <a href="freefire.html">Free Fire</a>
+  <a href="#about">About Us</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Featured games">
+      <div class="slider" id="slider">
+        <article class="slide active">
+  <img
+    src="images/obsidia-banner.png"
+    alt="KAIZO TOPUPS Obsidia gaming banner">
+</article>
+
+        <article class="slide">
+          <img
+            src="images/bgmi-banner.png"
+            alt="BGMI promotional banner" loading="lazy">
+          <div class="slide-overlay">
+            <p class="eyebrow">DROP INTO ACTION</p>
+            <h2>BGMI</h2>
+            <p>Get ready for your next battle.</p>
+          </div>
+        </article>
+
+        <article class="slide">
+          <img
+            src="images/free-fire.png"
+            alt="Free Fire promotional banner" loading="lazy">
+          <div class="slide-overlay">
+            <p class="eyebrow">FIGHT FOR GLORY</p>
+            <h2>Free Fire</h2>
+            <p>Make every match count.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="slider-controls" aria-label="Banner controls">
+        <button id="prev-slide" aria-label="Previous banner">‹</button>
+        <div class="slider-dots" id="slider-dots"></div>
+        <button id="next-slide" aria-label="Next banner">›</button>
+      </div>
+    </section>
+
+    <section class="games-section" id="games">
+      <div class="section-heading">
+        <p class="eyebrow">YOUR NEXT TOP-UP STARTS HERE</p>
+        <h2>Choose Your Game</h2>
+        <p>Select a game to explore its available packages.</p>
+      </div>
+
+      <div class="game-list">
+  <a class="game-card mlbb" href="mlbb.html">
+    <span class="game-icon">
+      <img src="images/mlbb-logo.jpg" alt="Mobile Legends Logo">
+    </span>
+    <span class="game-info">
+      <strong>Mobile Legends</strong>
+      <small>Diamonds Top-Up</small>
+    </span>
+    <span class="game-arrow">›</span>
+  </a>
+
+  <a class="game-card bgmi" href="bgmi.html">
+    <span class="game-icon">
+      <img src="images/bgmi-logo.jpeg" alt="BGMI Logo">
+    </span>
+    <span class="game-info">
+      <strong>BGMI</strong>
+      <small>UC Top-Up</small>
+    </span>
+    <span class="game-arrow">›</span>
+  </a>
+
+  <a class="game-card freefire" href="freefire.html">
+    <span class="game-icon">
+      <img src="images/freefire-logo.jpeg" alt="Free Fire Logo">
+    </span>
+    <span class="game-info">
+      <strong>Free Fire</strong>
+      <small>Diamonds Top-Up</small>
+    </span>
+    <span class="game-arrow">›</span>
+  </a>
+</div>
+    </section>
+
+    <section class="welcome-section">
+      <span class="welcome-star">✦</span>
+      <p class="eyebrow">WELCOME TO</p>
+      <h2>KAIZO TOPUPS</h2>
+      <h3>Your gaming journey starts here!</h3>
+      <p>
+        Get your favourite game top-ups with a simple ordering process,
+        payment verification, and friendly support.
+      </p>
+      <p>
+        Choose your game, enter your Player ID, place your order,
+        and let us handle the rest.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="#about">About Us</a>
+      <a href="#" id="instagram-link">Instagram</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-about" id="about">
+      <p>Built for gamers. Powered by passion.</p>
+      <p class="footer-contact" id="contact">
+        Need help? Contact our support team.
+      </p>
+    </div>
+
+    <p class="copyright">
+      ©️ <span id="current-year"></span> KAIZO TOPUPS.
+      All rights reserved.
+    </p>
+  </footer>
+</body>
+</html>
