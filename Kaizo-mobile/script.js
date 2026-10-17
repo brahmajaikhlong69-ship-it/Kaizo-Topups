@@ -110,3 +110,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+const supportWhatsApp = document.getElementById("support-whatsapp");
+const supportInstagram = document.getElementById("support-instagram");
+const footerInstagram = document.getElementById("instagram-link");
+
+if (supportWhatsApp) {
+  supportWhatsApp.href = "https://chat.whatsapp.com/JKHrG0jl2ftDX6vrXQr85n";
+  supportWhatsApp.target = "_blank";
+  supportWhatsApp.rel = "noopener noreferrer";
+}
+
+if (supportInstagram) {
+  supportInstagram.href = "https://www.instagram.com/kaizo_topups_official/";
+  supportInstagram.target = "_blank";
+  supportInstagram.rel = "noopener noreferrer";
+}
+
+if (footerInstagram) {
+  footerInstagram.href = "https://www.instagram.com/kaizo_topups_official/";
+  footerInstagram.target = "_blank";
+  footerInstagram.rel = "noopener noreferrer";
+}
